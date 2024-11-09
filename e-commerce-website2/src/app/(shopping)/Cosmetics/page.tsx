@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 
 import img32 from "../../../../images/img32.jpg"
 import img33 from "../../../../images/img33.jpg";

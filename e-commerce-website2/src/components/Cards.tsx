@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../../../images/img1.jpg";
+import { StaticImageData } from "next/image";
 
-export default function Cards({ imageSource, discount, newPrice, oldPrice }) {
+interface CardProps {
+  imageSource: StaticImageData;
+  discount: string;
+  newPrice: string | number;
+  oldPrice: string | number;
+}
+
+export default function Cards({ imageSource, discount, newPrice, oldPrice }:CardProps) {
   return (
     <div id="card-container">
       <div>

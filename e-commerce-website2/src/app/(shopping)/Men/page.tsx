@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
+
 import img23 from "../../../../images/img23.jpg"
 import img24 from "../../../../images/img24.jpg";
 import img25 from "../../../../images/img25.jpg";
-import img26 from "../../../../images/img26.jpg";
+
 
 import Cards from "@/components/Cards";
 
