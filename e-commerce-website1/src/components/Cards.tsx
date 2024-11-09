@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../../../images/img1.jpg";
+
 
 export default function Cards({ imageSource, discount, newPrice, oldPrice }) {
   return (
