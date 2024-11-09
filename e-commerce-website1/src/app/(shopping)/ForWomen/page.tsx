@@ -1,14 +1,10 @@
 import React from "react";
-import Image from "next/image";
+
 import img2 from "../../../../images/img2.jpg";
 import img5 from "../../../../images/img5.jpg";
 import img17 from "../../../../images/img17.jpg";
 import img18 from "../../../../images/img18.jpg";
-import img19 from "../../../../images/img19.jpg";
-import img20 from "../../../../images/img20.jpg"
-import img21 from "../../../../images/img21.jpg";
-import img22 from "../../../../images/img22.jpg";
-import img16 from "../../../../images/img16.jpg"
+
 import Cards from "@/components/Cards";
 
 export default function ForWomen() {
