@@ -1,14 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
-import heroimage from "../../images/heroimg.jpg"
+ import React from 'react'
+ import Image from 'next/image'
+import heroImage from "../app/(public)/cupcake-hero.jpg.jpg"
+
 
 function Hero() {
   return (
     <div id="hero">
- <Image
-      src={heroimage}
-      alt='hero section image'
-      
+ <Image id='hero-image'
+      src={heroImage}
+      alt='hero section image'     
       >
 
       </Image>
@@ -16,4 +16,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero;

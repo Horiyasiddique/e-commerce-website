@@ -1,26 +1,133 @@
-
-import Image from 'next/image';
-import logo from "../logo.png"
+import Link from "next/link";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
+import { GiSelfLove } from "react-icons/gi";
 function Header() {
   return (
-    <div className='w-screen h-20 bg-[#B24839] flex justify-between items-center '>
-      <div>
-        <Image className='w-32 h-16 object-cover ml-4' src={logo} alt="logo"  />
+    // main div for navbar
+    <div className=" ">
+      {/* first part of navbar */}
+      <div className="flex justify-between items-center w-full h-14">
+        <div className="flex gap-x-3 text-2xl text-slate-600 mx-6 ">
+          <a
+            href="www.linkedin.com/in/hooriya-siddique-b08754301"
+            className=" hover:text-blue-300"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/Horiyasiddique"
+            className="hover:text-blue-300"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.instagram.com/horiyasiddique/profilecard/?igsh=MW9sZTAycXdyaW9ybg=="
+            className="hover:text-blue-300"
+          >
+            <FaInstagramSquare />
+          </a>
+          <a
+            href="https://www.facebook.com/share/19gC7DRe5L/?mibextid=qi2Omg"
+            className="hover:text-blue-300"
+          >
+            <FaFacebook />
+          </a>
+        </div>
+
+        <div>
+          <p className="font-sans text-xl text-slate-600">
+            {" "}
+            <span className="text-slate-600 font-medium hover:text-blue-300">
+              {" "}
+              Transform Your Lifestyle
+            </span>{" "}
+            with Our Latest Products!
+          </p>
+        </div>
+
+        <div>
+          <select className="mx-6">
+            <option value="$USD">$USD</option>
+            <option value="PKR">PKR</option>
+            <option value="INR">INR</option>
+            <option value="YEN">YEN</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
       </div>
-      <div className='flex'>
-        <input className='rounded-md border-none w-96 h-9 p-4 font-serif hover:border-none hidden md:block ' type="text" placeholder='Search Here....' />
-        <button className='bg-[#92B49C] text-white w-20 border-none rounded-md relative right-20 hidden md:block'>Search</button>
+      <hr />
+
+      {/* second part of navbar */}
+      <div className="flex justify-around items-center my-4">
+        <div className="text-5xl text-black font-bold">HS</div>
+        <div>
+          <input
+            type="text"
+            placeholder="Search Here ....."
+            className="w-[500px] h-9 rounded-lg p-3 border-solid border-2 border-slate-500"
+          />
+        </div>
+
+        <div className="flex gap-x-5 text-2xl text-slate-600 ">
+          <FaCartPlus />
+          <GiSelfLove />
+        </div>
       </div>
-      <div className='mr-0'>
-      <ul className='flex justify-end text-white '>
-      <li className='m-3 hover:text-[#92B49C]'><a href="">Home</a></li>
-        <li className='m-3 hover:text-[#92B49C]'><a href="">Shop</a></li>
-        <li className='m-3 hover:text-[#92B49C]'><a href="">Contact Us</a></li>
-        <li className='m-3 hover:text-[#92B49C]'><a href="">Be a new seller</a></li>
-      </ul>
+      <hr />
+
+      {/* third part of navbar */}
+      <div className="my-4">
+        <ul className="w-screen h-10  font-semibold text-slate-950 flex justify-center items-center gap-8  ">
+          <li>
+            <Link href="/All" className="hover:text-blue-300">
+              All
+            </Link>
+          </li>
+          <li>
+            <Link href="/ForWomen" className="hover:text-blue-300">
+              For Women
+            </Link>
+          </li>
+          <li>
+            <Link href="/Men" className="hover:text-blue-300">
+              For Men
+            </Link>
+          </li>
+          <li>
+            <Link href="/Perfumes" className="hover:text-blue-300">
+              Perfumes
+            </Link>
+          </li>
+          <li>
+            <Link href="/Cosmetics" className="hover:text-blue-300">
+              Cosmetics
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/Jewellery" className="hover:text-blue-300">
+              Jewellery
+            </Link>
+          </li>
+          <li>
+            <Link href="/Books" className="hover:text-blue-300">
+              Books
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/Cart" className="hover:text-blue-300">
+              Cart
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

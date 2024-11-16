@@ -4,41 +4,28 @@ import { StaticImageData } from "next/image";
 
 interface CardProps {
   imageSource: StaticImageData;
-  discount: string;
-  newPrice: string | number;
-  oldPrice: string | number;
+
+  cakeName: string;
+  cakeDescription: string;
 }
 
-export default function Cards({ imageSource, discount, newPrice, oldPrice }:CardProps) {
+export default function Cards({
+  imageSource,
+  cakeName,
+  cakeDescription,
+}: CardProps) {
   return (
     <div id="card-container">
       <div>
-        <Image
-          src={imageSource}
-          alt="Description of the image"
-          width={150}
-          height={200}
-          className="object-cover"
-        />
+        <Image src={imageSource} alt="Description of the image" />
       </div>
 
-      <div id="discount">
-        {discount}
-      </div>
-      <div id="price-cont">
-        <p id="price-para">
-        <del>{oldPrice}</del> {newPrice} 
-        </p>
-      </div>
-      <div id="button-cont">
-        <button className="cards-button">
-          Buy now
-        </button>
-      </div>
-      <div>
-        <button className="cards-button ">
-          Add To Cart
-        </button>
+      <div id="CakeName">{cakeName}</div>
+      <div id="cakeDescript">{cakeDescription}</div>
+
+      <div id="card-buttons">
+        <button className="action-button">Buy Now</button>
+        <button className="action-button">Add to Cart</button>
       </div>
     </div>
   );

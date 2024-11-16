@@ -1,10 +1,16 @@
 import React from "react";
-import All from "./(shopping)/All/page";
 
+import Cake from "./(shop)/Cake/page";
+import About from "./(shop)/About/page";
+import Contact from "./(shop)/Contact/page";
 function page() {
-  return <div>
-    <All /> 
-    </div>;
+  return (
+    <div>
+      <About />
+      <Cake />
+      <Contact/>
+    </div>
+  );
 }
 
 export default page;

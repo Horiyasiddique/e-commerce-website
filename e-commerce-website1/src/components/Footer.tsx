@@ -1,59 +1,31 @@
 import React from 'react'
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='bg-[#B24839]'>
-      <div>
-    <div className='w-full flex justify-around text-white bg-[#B24839] mt-6 list-none'>
-      <div>
-        <li><a href="">Lorem, ipsum.</a></li>
-        <li><a href="">Lorem.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-      </div>
-
-      <div>
-        <li><a href="">Lorem, ipsum.</a></li>
-        <li><a href="">Lorem.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-      </div>
-
-      <div>
-        <li><a href="">Lorem, ipsum.</a></li>
-        <li><a href="">Lorem.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-      </div>
-
-      <div>
-        <li><a href="">Lorem, ipsum.</a></li>
-        <li><a href="">Lorem.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-        <li><a href="">Lorem, ipsum dolor.</a></li>
-      </div>
+    <div className='bg-blue-300 w-screen h-[200px] flex flex-col'>
+      <div className="flex justify-center mt-20 gap-x-3 text-2xl text-slate-600 mx-6">
+          <a href="www.linkedin.com/in/hooriya-siddique-b08754301" className="hover:scale-110">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/Horiyasiddique" className="hover:scale-110">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/horiyasiddique/profilecard/?igsh=MW9sZTAycXdyaW9ybg==" className="hover:scale-110">
+            <FaInstagramSquare />
+          </a>
+          <a href="https://www.facebook.com/share/19gC7DRe5L/?mibextid=qi2Omg" className="hover:scale-110">
+            <FaFacebook />
+          </a>
+        </div>
+        <div className='text-center mt-5 text-xl text-slate-800'>
+          All Rights reserved
+        </div>
     </div>
-
-    <div className='bg-[#B24839] text-white flex justify-around list-none mt-3'>
-      <li>Consumer Health</li>
-      <li>Privacy Policy</li>
-      <li>Copy Right</li>
-      <li>+92 3459788789</li>
-    </div>
-    </div>
-    </div>
+   
   )
 }
 

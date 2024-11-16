@@ -4,6 +4,10 @@ import img2 from "../../../../images/img2.jpg";
 import img5 from "../../../../images/img5.jpg";
 import img17 from "../../../../images/img17.jpg";
 import img18 from "../../../../images/img18.jpg";
+import img19 from "../../../../images/img19.jpg";
+import img20 from "../../../../images/img20.jpg";
+import img21 from "../../../../images/img21.jpg";
+import img22 from "../../../../images/img22.jpg"
 
 import Cards from "@/components/Cards";
 
@@ -39,25 +43,25 @@ export default function ForWomen() {
       </div>
       <div className="flex justify-around m-7 flex-wrap">
         <Cards
-          imageSource={img5}
+          imageSource={img19}
           discount="50% off"
           newPrice="$200.00"
           oldPrice="500"
         />
         <Cards
-          imageSource={img2}
+          imageSource={img20}
           discount="20% off"
           newPrice="$10.00"
           oldPrice="60"
         />
         <Cards
-          imageSource={img5}
+          imageSource={img21}
           discount="45% off"
           newPrice="$250.00"
           oldPrice="300"
         />
         <Cards
-          imageSource={img2}
+          imageSource={img22}
           discount="20% off"
           newPrice="$20.00"
           oldPrice="100"
