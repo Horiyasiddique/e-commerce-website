@@ -12,7 +12,7 @@ import Cards from "@/components/Cards";
 
 export default function Perfumes() {
   return (
-    <div>
+    <div className="max-w-screen-sm">
       <h1 className="text-3xl font-bold m-8">Blockbuster Deals 🎉</h1>
       <div className="flex justify-around m-7 flex-wrap ">
         <Cards

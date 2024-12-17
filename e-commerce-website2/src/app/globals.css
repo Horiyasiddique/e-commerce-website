@@ -206,10 +206,10 @@ li:hover{
 }
 
 #card-buttons {
-  height: 2rem;
-  width: 4rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -220,9 +220,8 @@ li:hover{
 
 .action-button {
   background-color: #ffd700;
-  /* Golden background */
+  width: 17rem;
   color: #1a1a1a;
-  /* Dark text */
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -238,13 +237,10 @@ li:hover{
   transform: scale(1.005);
 }
 
-
-/* Dark theme - Golden and Black color scheme */
 #contact-sec {
   width: 100vw;
   height: 100vh;
   background-color: #1a1a1a;
-  /* Dark background */
   display: flex;
   flex-direction: column;
   padding: 2rem;

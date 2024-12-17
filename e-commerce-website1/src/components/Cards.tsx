@@ -9,11 +9,12 @@ interface CardProps {
   discount: string;
   newPrice: string | number;
   oldPrice: string | number;
-}
+} 
 
 export default function Cards({imageSource,discount,newPrice, oldPrice,}: CardProps) {
   return (
-    <div className=" p-4 max-w-sm w-[280px] h-[370px] mx-auto grid place-content-center bg-white border border-gray-200 shadow-lg space-x-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <div className="">
+    <div className=" ml-6 p-4 max-w-sm w-[280px] h-[370px] mx-auto grid place-content-center bg-white border border-gray-200 shadow-lg space-x-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       <div className="flex justify-center mb-4">
         <Image
           src={imageSource}
@@ -48,6 +49,7 @@ export default function Cards({imageSource,discount,newPrice, oldPrice,}: CardPr
           Add to Cart
         </button>
       </div>
+    </div>
     </div>
   );
 }

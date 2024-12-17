@@ -14,7 +14,7 @@ import Cards from "@/components/Cards";
 export default function ForWomen() {
   return (
     <div>
-      <h1 className="text-3xl font-bold m-8">Blockbuster Deals 🎉</h1>
+      <h1 className="text-3xl text-black font-bold m-8">Blockbuster Deals 🎉</h1>
       <div className="flex justify-around  flex-wrap ">
         <Cards
           imageSource={img2}

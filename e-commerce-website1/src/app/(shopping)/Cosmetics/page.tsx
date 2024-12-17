@@ -14,8 +14,8 @@ import Cards from "@/components/Cards";
 
 export default function Cosmetics() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold m-8">Blockbuster Deals 🎉</h1>
+    <div className="min-h-screen w-screen">
+      <h1 className="text-3xl text-black font-bold m-8">Blockbuster Deals 🎉</h1>
       <div className="flex justify-around m-7 flex-wrap ">
         <Cards
           imageSource={img32}

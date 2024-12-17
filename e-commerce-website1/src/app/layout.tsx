@@ -4,7 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+
 import Footer from "@/components/Footer";
 
 const geistSans = localFont({
@@ -31,12 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white !scroll-smooth `}
       >
         <Header/>
         <Hero/>
         
-        <Navbar/>
+        {/* <Navbar/> */}
      
         {children}
         <Footer/>

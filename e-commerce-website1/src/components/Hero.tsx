@@ -4,7 +4,7 @@ import heroimage from "../../images/Hero-image.png";
 
 function Hero() {
   return (
-    <div className="w-screen h-[500px] rounded-lg object-cover">
+    <div className="max-w-screen-sm  rounded-lg object-cover">
       <Image src={heroimage} alt="hero section image"></Image>
     </div>
   );
